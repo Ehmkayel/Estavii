@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Conference</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body class="bg-color-light-blue text-color-faded-blue tracking-wider">
+            <header>
+                <nav class="container flex justify-between items-center">
+                    <div class=" py-5 text-color-deepest-blue font-bold text-3xl">
+                        <a href="#">Estavii</a>
+                    </div>
+                    <div>
+                        <ul class="hidden lg:flex items-center space-x-6">
+                            <li><a href="#" class="hover:text-color-primary-light">Ticket Info</a></li>
+                            <li><a href="#" class="hover:text-color-primary-light">Speakers</a></li>
+                            <li><a href="#" class="hover:text-color-primary-light">Panelist</a></li>
+                            <li><a href="#" class="hover:text-color-primary-light bg-color-deepest-blue text-color-primary-dark px-5 py-5 rounded-md capitalize font-bold">Access Pass</a></li>
+                        </ul>
+                    </div>
+                 <!-- Mobile responsiveness -->
+                    <div class="lg:hidden cursor-pointer z-50" id="hamburger" >
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="hidden bg-color-primary-dark h-[50vh] absolute inset-0" id="menu">
+                        <ul class="h-full grid place-items-center py-5">
+                            <li><a href="#" id="link" class="hover:text-color-secondary">Ticket Info</a></li>
+                            <li><a href="#" id="link" class="hover:text-color-secondary">Speakers</a></li>
+                            <li><a href="#" id="link" class="hover:text-color-secondary">Panelist</a></li>
+                            <li><a href="#" id="link" class="hover:text-color-secondary bg-color-blob px-7 py-3 rounded-md capitalize font-bold">Access Pass</a></li>
+                        
+                        </ul>
+                    </div>
+                 </div>
+                </nav>
+                
+            </header>
+            <!-- end of navbar-->
+            <!-- banner section -->
+            <section>
+                <div id="banner">
+                    <div class="container py-10">
+                        <div class="flex flex-col items-center z-10 md:flex-row">
+                            <div class="text-center mb-7 md:text-left md:w-1/2 md:pr-10">
+                                <h1 class="text-2xl md:text-3xl font-bold leading-snug">Power of Aesthetics </h1>
+                                <p class="leading-relaxed text-2xl">The implications of obsolete buildings on the aesthetics of an area</p>
+                                <button class="btn">Wednesday 8th November,2023</button>
+                                <button class="btn">10.00am</button>
+                            </div>
+                            <div class="md:w-1/2">
+                                <img src="./images/estate.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <!-- Sponsors section -->
+            <div class="text-center">
+                <h2 class="text-color-secondary text-2xl font-bold py-8"> sponsors</h2>
+                <div class="flex justify-around">
+                    <div>
+                        <img src="./images/daf.png" alt="daf icon">
+                    </div>
+                    <div>
+                        <img src="./images/bitmoji.png" alt="bitmoji icon">
+                    </div>
+                    <div>
+                        <img src="./images/international.png" alt="international icon">
+                    </div>
+                    <div>
+                        <img src="./images/volvo-.png" alt="volvo icon">
+                    </div>
+                    <div>
+                        <img src="./images/neos.png" alt="neos icon">
+                    </div>
+                    <div>
+                        <img src="./images/renault.png" alt="renault icon">
+                    </div>
+                </div>
+                
+            </div>
+        
+    <!-- hamburger-->
+        <script>
+            const hamburger = document.querySelector("#hamburger");
+            const menu = document.querySelector("#menu");
+            const link = document.querySelector("#link");
+            const faSolid = document.querySelector(".fa-solid");
+
+            hamburger.addEventListener("click", () =>{
+                menu.classList.toggle("hidden");
+                faSolid.classList.toggle("fa-xmark")
+            })
+        </script> 
+    
+</body>
+</html>

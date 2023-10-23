@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply bg-color-deepest-blue text-color-primary-dark px-4 py-3 rounded-md font-bold mt-5;
+}
