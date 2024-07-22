@@ -1,11 +1,11 @@
 # Estavii
 An event website with tailwindcss
 ## Table of Contents
--[Overview]
--[Resources]
--[Tailwind][installation]
--[Process]
--[Technologies]
+-[Overview](#overview)
+-[Resources](#resources)
+-[Tailwind installation](#tailwind-installation)
+-[Process](#process)
+-[Technologies](technologies)
 
 ## Overview
 I created an event website with Tailwind css
